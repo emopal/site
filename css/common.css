@@ -206,10 +206,7 @@ section{
     color: white;
     font-weight: 200;
 }
-#about{
-    background-color: rgba(0, 0, 0, .7);
-}
-#about h1{
+#about h1, #skills h1, #projects h1{
     color: var(--primary);
     font-size: 30px;
 }
@@ -218,24 +215,46 @@ p{
     font-size: 18px;
     margin: 10px 0px;
     font-weight: 200;
-    text-align: justify;
 }
-#about p{
-    width: 50%;
+.flexy{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-#about .lefty{
-    float: left;
-    width: 50%;
-}
-#about .img{
-    background-image: url('https://avatars.githubusercontent.com/u/49512755?v=4');
+.flexy div{
+    width: 48%;
     height: 100%;
-    width: 50%;
-    background-position: center;
-    background-size: cover;
 }
-#about .img .img-overlay{
-    
+.flexy .img-container{
+    padding: 0px 0px 50px 50px;
+}
+.me{
+    width: 100%;
+    height: auto;
+}
+.skill-container{
+    line-height: 30px;
+}
+.skill-container span{
+    padding: 2px 5px;
+    color: white;
+    background-color: var(--secondary);
+    margin: 1px;
+}
+h4{
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+}
+#skills, #projects, #about{
+    background-color: rgba(0, 0, 0, .7);
+}
+.skill-container-b{
+    width: 100% !important;
+}
+.skill-container-b h2{
+    color: var(--secondary);
+    margin-top: 20px;
 }
 
 @media only screen 
@@ -252,10 +271,19 @@ p{
     padding: 20px;
    }
    section{
-    padding: 80px;
+    padding: 50px;
    }
    #home{
     text-align: left;
     align-items: baseline;
+   }
+   .flexy{
+    display: block
+   }
+   .flexy div{
+    width: 100%;
+   }
+   .flexy .img-container{
+    padding: 5px !important;
    }
 }
