@@ -203,10 +203,10 @@ section{
     font-size: 50px;
 }
 #home h2{
-    color: white;
+    color:white;
     font-weight: 200;
 }
-#about h1, #skills h1, #projects h1{
+#about h1, #skills h1, #projects h1, #blog h1{
     color: var(--primary);
     font-size: 30px;
 }
@@ -246,7 +246,7 @@ h4{
     margin-top: 20px;
     font-size: 20px;
 }
-#skills, #projects, #about{
+section{
     background-color: rgba(0, 0, 0, .7);
 }
 .skill-container-b{
@@ -256,7 +256,29 @@ h4{
     color: var(--secondary);
     margin-top: 20px;
 }
-
+.project{
+    display: flex;
+    width: 100%;
+}
+.project-image{
+    width: 60%;
+    object-fit: cover;
+}
+.project-text{
+    padding: 10px;
+}
+.project-text h2{
+    color: var(--secondary);
+}
+.blog-post{
+    padding: 20px 20px 30px 20px;
+    border: 3px solid white;
+    text-decoration: inherit;
+    color: inherit;
+}
+.blog-post h2{
+    color: var(--secondary);
+}
 @media only screen 
    and (max-width : 400px) {
    .left-navbar{
@@ -285,5 +307,15 @@ h4{
    }
    .flexy .img-container{
     padding: 5px !important;
+   }
+   .project{
+    display: block;
+   }
+   .project div{
+    width: 100%;
+    padding: 0px;
+   }
+   .project-image{
+    width: 100%;
    }
 }
