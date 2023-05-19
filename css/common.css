@@ -209,7 +209,7 @@ section{
     color:white;
     font-weight: 200;
 }
-#about h1, #skills h1, #projects h1, #blog h1{
+#about h1, #skills h1, #projects h1, #blog h1, #contact h1{
     color: var(--primary);
     font-size: 30px;
 }
@@ -281,6 +281,28 @@ section{
 }
 .blog-post h2{
     color: var(--secondary);
+}
+input, textarea{
+    width: 100%;
+    border: none;
+    background-color: white;
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px 0px;
+    font-family: inherit;
+}
+textarea{
+    height: 200px;
+}
+input[type=submit]{
+    background-color: var(--secondary);
+    color: blue;
+    transition: .1s;
+}
+input[type=submit]:hover{
+    background-color: #000CEE;
+    color:#FF6C0D;
+    cursor: pointer;
 }
 @media only screen 
    and (max-width : 400px) {
